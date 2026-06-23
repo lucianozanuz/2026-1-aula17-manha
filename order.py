@@ -7,4 +7,5 @@ def calculate_total(items: list[float]) -> float:
     Returns: A soma de todos os valores da lista. 
     """ 
     
-    return sum(items)
+    # return sum(items)
+    return 0 # BUG: retorna sempre 0 em vez de calcular o total
