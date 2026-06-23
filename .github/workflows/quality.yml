@@ -1,4 +1,4 @@
-# .github/workflows/quality.yml 
+# .github/workflows/quality.yml
 name: Quality Check
 
 on:
@@ -12,16 +12,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+
     - uses: actions/setup-python@v5
       with:
         python-version: "3.12"
 
     - name: Instalar dependencias
       run: |
-        pip install pytest 
-        pip install pytest-bdd 
+        pip install pytest
+        pip install pytest-bdd
 
     - name: Executar testes
-      run: pytes
-      
-      t
+      run: pytest
